@@ -72,7 +72,12 @@ app.use("/campground/:id/comments",commentRoutes);
 // ];
 
 
-
-app.listen(3000, function () {
-    console.log("The server has started!!");
-});
+if(url==="mongodb://localhost/yelp_camp_final"){
+    app.listen(3000, function () {
+        console.log("The server has started!!");
+    });
+}else{
+    app.listen(process.env.PORT,process.env.IP, function () {
+        console.log("The server has started!!");
+    });
+}
