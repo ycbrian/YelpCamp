@@ -25,4 +25,4 @@ After downloading it, run "mongod" and "mongo" in two different terminal.
 ```sh
 "node app.js" 
 ```
-4.(optional) Set your remote online server for production and push the website on it
+4. (optional) Set your remote online server for production and push the website on it
